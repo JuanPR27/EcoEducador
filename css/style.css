@@ -1,334 +1,335 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
-    transition: all 0.3s ease;
+  font-family: "Merriweather", serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+  transition: all 0.3s ease;
 }
 
 /* Estilos del encabezado */
 header {
-    background: #2e8b57;
-    color: white;
-    padding: 1rem 0;
-    text-align: center;
-    position: relative;
+  background: #174917;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+  position: relative;
 }
 
 header h1 {
-    margin: 0;
-    padding: 0 1rem;
+  margin: 0;
+  padding: 0 1rem;
 }
 
 header p {
-    margin: 0.5rem 0 0;
-    padding: 0 1rem;
+  margin: 0.5rem 0 0;
+  padding: 0 1rem;
 }
 
 .accesibilidad {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 /* Navegación */
 nav {
-    background: #3cb371;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+  background: #1f721f;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 nav ul li {
-    flex: 1;
-    min-width: 120px;
-    text-align: center;
+  flex: 1;
+  min-width: 120px;
+  text-align: center;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 1rem;
-    display: block;
-    transition: background 0.3s;
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+  transition: background 0.3s;
 }
 
 nav ul li a:hover {
-    background: #2e8b57;
+  background: #2e8b57;
 }
 
 /* Contenido principal */
 main {
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 section {
-    margin-bottom: 2rem;
-    background: white;
-    padding: 1.5rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
-    color: #2e8b57;
-    margin-top: 0;
-    border-bottom: 2px solid #3cb371;
-    padding-bottom: 0.5rem;
+  color: #2e8b57;
+  margin-top: 0;
+  border-bottom: 2px solid #3cb371;
+  padding-bottom: 0.5rem;
 }
 
 /* Imágenes */
 .img-destacada {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 1rem auto;
-    border-radius: 5px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 5px;
 }
 
 /* Estilos para recursos */
 .recurso {
-    margin-bottom: 2rem;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
 .video-container {
-    position: relative;
-    padding-bottom: 56.25%; /* Relación 16:9 */
-    height: 0;
-    overflow: hidden;
-    margin: 1rem 0;
+  position: relative;
+  padding-bottom: 56.25%; /* Relación 16:9 */
+  height: 0;
+  overflow: hidden;
+  margin: 1rem 0;
 }
 
 .video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .infografia {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 1rem auto;
-    border: 1px solid #ddd;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border: 1px solid #ddd;
 }
 
 /* Estilos para el juego */
 .contenedores {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
 }
 
 .contenedor {
-    flex: 1;
-    min-width: 150px;
-    padding: 1rem;
-    text-align: center;
-    background: #f8f8f8;
-    border: 2px dashed #ccc;
-    border-radius: 5px;
-    transition: all 0.3s;
+  flex: 1;
+  min-width: 150px;
+  padding: 1rem;
+  text-align: center;
+  background: #f8f8f8;
+  border: 2px dashed #ccc;
+  border-radius: 5px;
+  transition: all 0.3s;
 }
 
 .residuos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
 }
 
 .residuo {
-    padding: 0.5rem 1rem;
-    background: #3cb371;
-    color: white;
-    border-radius: 20px;
-    cursor: grab;
-    user-select: none;
-    transition: transform 0.2s;
+  padding: 0.5rem 1rem;
+  background: #3cb371;
+  color: white;
+  border-radius: 20px;
+  cursor: grab;
+  user-select: none;
+  transition: transform 0.2s;
 }
 
 .residuo:active {
-    cursor: grabbing;
-    transform: scale(1.05);
+  cursor: grabbing;
+  transform: scale(1.05);
 }
 
 #mensaje-juego {
-    margin-top: 1rem;
-    padding: 1rem;
-    text-align: center;
-    font-weight: bold;
-    min-height: 20px;
+  margin-top: 1rem;
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+  min-height: 20px;
 }
 
 /* Estilos para consejos y calculadora */
 .consejo {
-    margin-bottom: 2rem;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
 .campo {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .campo label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
 }
 
-.campo input, .campo select {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-sizing: border-box;
+.campo input,
+.campo select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 button {
-    background: #3cb371;
-    color: white;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background 0.3s;
+  background: #3cb371;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
 }
 
 button:hover {
-    background: #2e8b57;
+  background: #2e8b57;
 }
 
 .resultado {
-    margin-top: 1rem;
-    padding: 1.5rem;
-    background: #e8f5e9;
-    border-radius: 4px;
-    display: none;
+  margin-top: 1rem;
+  padding: 1.5rem;
+  background: #e8f5e9;
+  border-radius: 4px;
+  display: none;
 }
 
 .resultado h4 {
-    margin-top: 0;
-    color: #2e8b57;
+  margin-top: 0;
+  color: #2e8b57;
 }
 
 /* Accesibilidad */
-button#aumentar-texto, 
-button#disminuir-texto, 
+button#aumentar-texto,
+button#disminuir-texto,
 button#alto-contraste {
-    background: transparent;
-    color: white;
-    border: 1px solid white;
-    padding: 0.25rem 0.5rem;
-    margin: 0 0.25rem;
-    font-size: 0.9rem;
-    cursor: pointer;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 0.25rem 0.5rem;
+  margin: 0 0.25rem;
+  font-size: 0.9rem;
+  cursor: pointer;
 }
 
-button#aumentar-texto:hover, 
-button#disminuir-texto:hover, 
+button#aumentar-texto:hover,
+button#disminuir-texto:hover,
 button#alto-contraste:hover {
-    background: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.2);
 }
 
 /* Alto contraste */
 .alto-contraste {
-    background: black !important;
-    color: white !important;
+  background: black !important;
+  color: white !important;
 }
 
 .alto-contraste header,
 .alto-contraste nav,
 .alto-contraste footer {
-    background: #222 !important;
-    color: yellow !important;
+  background: #222 !important;
+  color: yellow !important;
 }
 
 .alto-contraste section {
-    background: #111 !important;
-    color: white !important;
-    border-color: yellow !important;
+  background: #111 !important;
+  color: white !important;
+  border-color: yellow !important;
 }
 
 .alto-contraste .resultado {
-    background: #333 !important;
-    color: white !important;
+  background: #333 !important;
+  color: white !important;
 }
 
 .alto-contraste .contenedor {
-    background: #222 !important;
-    color: yellow !important;
-    border-color: yellow !important;
+  background: #222 !important;
+  color: yellow !important;
+  border-color: yellow !important;
 }
 
 .alto-contraste .residuo {
-    background: #444 !important;
-    color: white !important;
+  background: #444 !important;
+  color: white !important;
 }
 
 /* Información de física */
 .fisica-info {
-    background: #f0f8ff;
-    padding: 1.5rem;
-    border-radius: 5px;
-    margin-top: 2rem;
+  background: #f0f8ff;
+  padding: 1.5rem;
+  border-radius: 5px;
+  margin-top: 2rem;
 }
 
 .fisica-info h3 {
-    color: #2e8b57;
-    margin-top: 0;
+  color: #2e8b57;
+  margin-top: 0;
 }
 
 /* Diseño responsivo */
 @media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-    
-    nav ul li {
-        min-width: 100%;
-    }
-    
-    .contenedor {
-        min-width: 100%;
-    }
-    
-    .accesibilidad {
-        position: static;
-        text-align: center;
-        margin-top: 1rem;
-    }
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    min-width: 100%;
+  }
+
+  .contenedor {
+    min-width: 100%;
+  }
+
+  .accesibilidad {
+    position: static;
+    text-align: center;
+    margin-top: 1rem;
+  }
 }
 
 @media (max-width: 480px) {
-    main {
-        padding: 1rem;
-    }
-    
-    section {
-        padding: 1rem;
-    }
+  main {
+    padding: 1rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
 }
