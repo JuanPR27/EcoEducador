@@ -1,174 +1,236 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Plataforma de sensibilización ambiental para comunidades vulnerables">
-    <meta name="theme-color" content="#2e8b57">
-    <link rel="icon" href="images/favicon.ico">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Plataforma de sensibilización ambiental para comunidades vulnerables"
+    />
+    <meta name="theme-color" content="#2e8b57" />
+    <link rel="icon" href="images/favicon.ico" />
     <title>EcoEducador - Sensibilización Ambiental</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <header>
-        <h1>EcoEducador</h1>
-        <p>Plataforma de sensibilización ambiental para comunidades vulnerables</p>
-        <div class="accesibilidad">
-            <button id="aumentar-texto" aria-label="Aumentar tamaño de texto">A+</button>
-            <button id="disminuir-texto" aria-label="Disminuir tamaño de texto">A-</button>
-                <i class="fas fa-adjust"></i>
-            </button>
-        </div>
+      <h1>🌍 EcoEducador</h1>
+      <p>
+        Plataforma de sensibilización ambiental para comunidades vulnerables
+      </p>
+      <div class="accesibilidad">
+        <button id="aumentar-texto" aria-label="Aumentar tamaño de texto">
+          A+
+        </button>
+        <button id="disminuir-texto" aria-label="Disminuir tamaño de texto">
+          A-
+        </button>
+        <button id="alto-contraste" aria-label="Activar alto contraste">
+          <i class="fas fa-adjust"></i>
+        </button>
+      </div>
     </header>
 
     <nav>
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#recursos">Recursos</a></li>
-            <li><a href="#juegos">Juegos</a></li>
-            <li><a href="#consejos">Consejos prácticos</a></li>
-            <li><a href="#energia">Energía</a></li>
-        </ul>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#recursos">Recursos</a></li>
+        <li><a href="#juegos">Juegos</a></li>
+        <li><a href="#consejos">Consejos prácticos</a></li>
+        <li><a href="#energia">Energía</a></li>
+      </ul>
     </nav>
 
     <main>
-        <section id="inicio">
-            <h2>Bienvenido a EcoEducador</h2>
-            <p>Una plataforma diseñada para enseñar sobre el cuidado del medio ambiente de manera accesible para todos.</p>
-            <img src="images/ecologia.jpg" alt="Personas cuidando el medio ambiente" class="img-destacada">
-        </section>
+      <section id="inicio">
+        <h2>Bienvenido a EcoEducador</h2>
+        <p>
+          Una plataforma diseñada para enseñar sobre el cuidado del medio
+          ambiente de manera accesible para todos.
+        </p>
+        <img
+          src="images/principal.jpg"
+          alt="Arbol con hojas ramas formando el planeta tierra"
+          class="img-destacada"
+        />
+      </section>
 
-        <section id="recursos">
-            <h2>Recursos Educativos</h2>
-            
-            <div class="recurso">
-                <h3>Conservación del agua</h3>
-                <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ME2X2UxgkLc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <p>Aprende cómo ahorrar agua en tu hogar con estos simples consejos.</p>
-            </div>
-            
-            <div class="recurso">
-                <h3>Infografía: Reciclaje básico</h3>
-                <img src="images/reciclaje.png" alt="Infografía sobre reciclaje" class="infografia">
-                <p>Guía visual para separar correctamente tus residuos.</p>
-            </div>
-        </section>
+      <section id="recursos">
+        <h2>Recursos Educativos</h2>
 
-        <section id="juegos">
-            <h2>Juegos Interactivos</h2>
-            
-            <div class="juego" id="juego-clasificacion">
-                <h3>Clasifica los residuos</h3>
-                <p>Arrastra cada objeto al contenedor correcto:</p>
-                
-                <div class="contenedores">
-                    <div class="contenedor" id="organico">Orgánico</div>
-                    <div class="contenedor" id="papel">Papel</div>
-                    <div class="contenedor" id="plastico">Plástico</div>
-                    <div class="contenedor" id="vidrio">Vidrio</div>
-                </div>
-                
-                <div class="residuos">
-                    <div class="residuo" draggable="true" data-tipo="organico">Cáscara de plátano</div>
-                    <div class="residuo" draggable="true" data-tipo="papel">Periódico</div>
-                    <div class="residuo" draggable="true" data-tipo="plastico">Botella PET</div>
-                    <div class="residuo" draggable="true" data-tipo="vidrio">Frasco de mermelada</div>
-                    <div class="residuo" draggable="true" data-tipo="organico">Restos de comida</div>
-                    <div class="residuo" draggable="true" data-tipo="papel">Caja de cereal</div>
-                </div>
-                
-                <div id="mensaje-juego"></div>
-            </div>
-        </section>
+        <div class="recurso">
+          <h3>Conservación del agua</h3>
+          <div class="video-container">
+            <iframe
+              width="550"
+              height="300"
+              src="https://www.youtube.com/embed/ME2X2UxgkLc"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <p>
+            Aprende cómo ahorrar agua en tu hogar con estos simples consejos.
+          </p>
+        </div>
 
-        <section id="consejos">
-            <h2>Consejos Prácticos</h2>
-            
-            <div class="consejo">
-                <h3>Calculadora de Ahorro de Agua</h3>
-                <p>Descubre cuánta agua puedes ahorrar con pequeños cambios:</p>
-                
-                <form id="calculadora-agua">
-                    <div class="campo">
-                        <label for="duchas">Duchas por semana:</label>
-                        <input type="number" id="duchas" min="0" value="7">
-                    </div>
-                    
-                    <div class="campo">
-                        <label for="tiempo-ducha">Minutos por ducha:</label>
-                        <input type="number" id="tiempo-ducha" min="1" value="10">
-                    </div>
-                    
-                    <div class="campo">
-                        <label for="reductor">¿Usas reductor de caudal?</label>
-                        <select id="reductor">
-                            <option value="no">No</option>
-                            <option value="si">Sí</option>
-                        </select>
-                    </div>
-                    
-                    <button type="button" id="calcular-agua">Calcular Ahorro</button>
-                    
-                    <div id="resultado-agua" class="resultado"></div>
-                </form>
-            </div>
-        </section>
+        <div class="recurso">
+          <h3>Infografía: Reciclaje básico ♻</h3>
+          <img
+            src="images/reciclaje.png"
+            alt="Infografía sobre reciclaje"
+            class="infografia"
+          />
+          <p>Guía visual para separar correctamente tus residuos.</p>
+        </div>
+      </section>
 
-        <section id="energia">
-            <h2>Energía en tu Hogar</h2>
-            
-            <div class="recurso">
-                <h3>Energías Renovables</h3>
-                <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/eRXY4pnLhmI?si=s3InhJcR-fMb10-L" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <p>Descubre cómo las energías renovables pueden transformar nuestro futuro y proteger el medio ambiente.</p>
+      <section id="juegos">
+        <h2>Juegos Interactivos</h2>
+
+        <div class="juego" id="juego-clasificacion">
+          <h3>Clasifica los residuos</h3>
+          <p>Arrastra cada objeto al contenedor correcto:</p>
+
+          <div class="contenedores">
+            <div class="contenedor" id="organico">Orgánico</div>
+            <div class="contenedor" id="papel">Papel</div>
+            <div class="contenedor" id="plastico">Plástico</div>
+            <div class="contenedor" id="vidrio">Vidrio</div>
+          </div>
+
+          <div class="residuos">
+            <div class="residuo" draggable="true" data-tipo="organico">
+              Cáscara de plátano
             </div>
-            
-            <div class="consejo">
-                <h3>Calculadora de Consumo Eléctrico</h3>
-                <p>Calcula cuánta energía consumen tus aparatos:</p>
-                
-                <form id="calculadora-energia">
-                    <div class="campo">
-                        <label for="aparato">Aparato eléctrico:</label>
-                        <select id="aparato">
-                            <option value="foco">Foco incandescente (60W)</option>
-                            <option value="led">Foco LED (10W)</option>
-                            <option value="tv">Televisor (150W)</option>
-                            <option value="nevera">Nevera (200W)</option>
-                        </select>
-                    </div>
-                    
-                    <div class="campo">
-                        <label for="horas-uso">Horas de uso al día:</label>
-                        <input type="number" id="horas-uso" min="0" max="24" value="4">
-                    </div>
-                    
-                    <button type="button" id="calcular-energia">Calcular Consumo</button>
-                    
-                    <div id="resultado-energia" class="resultado"></div>
-                </form>
+            <div class="residuo" draggable="true" data-tipo="papel">
+              Periódico
             </div>
-            
-            <div class="fisica-info">
-                <h3>Conceptos de Física Eléctrica</h3>
-                <p>La energía eléctrica se mide en kilovatios-hora (kWh).</p>
-                <p>Fórmula: <strong>Energía (kWh) = Potencia (kW) × Tiempo (h)</strong></p>
-                <p>1 kW = 1000 Watts</p>
-                <p>El consumo eléctrico depende de la potencia del aparato y el tiempo de uso.</p>
+            <div class="residuo" draggable="true" data-tipo="plastico">
+              Botella PET
             </div>
-        </section>
+            <div class="residuo" draggable="true" data-tipo="vidrio">
+              Frasco de mermelada
+            </div>
+            <div class="residuo" draggable="true" data-tipo="organico">
+              Restos de comida
+            </div>
+            <div class="residuo" draggable="true" data-tipo="papel">
+              Caja de cereal
+            </div>
+          </div>
+
+          <div id="mensaje-juego"></div>
+        </div>
+      </section>
+
+      <section id="consejos">
+        <h2>Consejos Prácticos</h2>
+
+        <div class="consejo">
+          <h3>Calculadora de Ahorro de Agua</h3>
+          <p>Descubre cuánta agua puedes ahorrar con pequeños cambios:</p>
+
+          <form id="calculadora-agua">
+            <div class="campo">
+              <label for="duchas">Duchas por semana:</label>
+              <input type="number" id="duchas" min="0" value="7" />
+            </div>
+
+            <div class="campo">
+              <label for="tiempo-ducha">Minutos por ducha:</label>
+              <input type="number" id="tiempo-ducha" min="1" value="10" />
+            </div>
+
+            <div class="campo">
+              <label for="reductor">¿Usas reductor de caudal?</label>
+              <select id="reductor">
+                <option value="no">No</option>
+                <option value="si">Sí</option>
+              </select>
+            </div>
+
+            <button type="button" id="calcular-agua">Calcular Ahorro</button>
+
+            <div id="resultado-agua" class="resultado"></div>
+          </form>
+        </div>
+      </section>
+
+      <section id="energia">
+        <h2>Energía en tu Hogar</h2>
+
+        <div class="recurso">
+          <h3>Energías Renovables</h3>
+          <div class="video-container">
+            <iframe
+              width="550"
+              height="300"
+              src="https://www.youtube.com/embed/eRXY4pnLhmI?si=s3InhJcR-fMb10-L"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <p>
+            Descubre cómo las energías renovables pueden transformar nuestro
+            futuro y proteger el medio ambiente.
+          </p>
+        </div>
+
+        <div class="consejo">
+          <h3>Calculadora de Consumo Eléctrico</h3>
+          <p>Calcula cuánta energía consumen tus aparatos:</p>
+
+          <form id="calculadora-energia">
+            <div class="campo">
+              <label for="aparato">Aparato eléctrico:</label>
+              <select id="aparato">
+                <option value="foco">Foco incandescente (60W)</option>
+                <option value="led">Foco LED (10W)</option>
+                <option value="tv">Televisor (150W)</option>
+                <option value="nevera">Nevera (200W)</option>
+              </select>
+            </div>
+
+            <div class="campo">
+              <label for="horas-uso">Horas de uso al día:</label>
+              <input type="number" id="horas-uso" min="0" max="24" value="4" />
+            </div>
+
+            <button type="button" id="calcular-energia">
+              Calcular Consumo
+            </button>
+
+            <div id="resultado-energia" class="resultado"></div>
+          </form>
+        </div>
+
+        <div class="fisica-info">
+          <h3>Conceptos de Física Eléctrica</h3>
+          <p>La energía eléctrica se mide en kilovatios-hora (kWh).</p>
+          <p>
+            Fórmula: <strong>Energía (kWh) = Potencia (kW) × Tiempo (h)</strong>
+          </p>
+          <p>1 kW = 1000 Watts</p>
+          <p>
+            El consumo eléctrico depende de la potencia del aparato y el tiempo
+            de uso.
+          </p>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <p>Proyecto Integrador - Sensibilización Ambiental</p>
-        <p>Escuela Tecnologica Instituto Tecnico Central</p>
+      <p>Proyecto Integrador - Sensibilización Ambiental</p>
+      <p>Escuela Tecnologica Instituto Tecnico Central</p>
     </footer>
 
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
